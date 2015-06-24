@@ -14,6 +14,7 @@
  */
 package com.weather.hackathon.app;
 
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
@@ -29,10 +30,15 @@ import com.weather.hackathon.model.LayersFetcher;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.StatusLine;
+import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.protocol.HTTP;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -44,6 +50,7 @@ import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import com.weather.hackathon.model.JSONParser;
 
 /**
  * Activity for displaying the map with a weather overlay.
@@ -55,6 +62,10 @@ public class WeatherMapActivity extends FragmentActivity {
     private GoogleMap map; // Might be null if Google Play services APK is not available.
     private Handler handler;
     private LayersFetcher layersFetcher;
+
+    JSONParser jsonparser = new JSONParser();
+    String ab;
+    JSONObject jobj = null;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -149,8 +160,10 @@ public class WeatherMapActivity extends FragmentActivity {
         map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                String weatherInfo = getInfo(marker);
-                Log.i("JSON RESPONSE TEST", weatherInfo);
+                new retrievedata().execute();
+
+//                String weatherInfo = getInfo(marker);
+//                Log.i("JSON RESPONSE TEST", weatherInfo);
                 return false; //false shows info on click while true does not
             }
         });
@@ -158,9 +171,36 @@ public class WeatherMapActivity extends FragmentActivity {
     }
 
     private String getInfo(Marker user) {
-//        String urlString="http://api.weather.com/v1/geocode/40/-74/observations/current.json?apiKey={34aae6773a01ce1756979f510dff96b9}&language=en-US&units=m";
-//        String resultToDisplay = "";
-//        int responseCode = -1;
+        String urlString="http://api.weather.com/v1/geocode/40.0/-74.0/observations/current.json?apiKey=34aae6773a01ce1756979f510dff96b9&language=en-US&units=e";
+        String resultToDisplay = "";
+        int responseCode = -1;
+
+//        StringBuilder builder = new StringBuilder();
+//        HttpClient client = new DefaultHttpClient();
+//        HttpGet httpGet = new HttpGet(urlString);
+//        try{
+//            HttpResponse response = client.execute(httpGet);
+//            StatusLine statusLine = response.getStatusLine();
+//            int statusCode = statusLine.getStatusCode();
+//            if(statusCode == 200){
+//                HttpEntity entity = response.getEntity();
+//                InputStream content = entity.getContent();
+//                BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+//                String line;
+//                while((line = reader.readLine()) != null){
+//                    builder.append(line);
+//                }
+//            } else {
+//                Log.e("JSON STATUS","Failedet JSON object");
+//            }
+//        }catch(ClientProtocolException e){
+//            e.printStackTrace();
+//        } catch (IOException e){
+//            e.printStackTrace();
+//        }
+//        return builder.toString();
+
+//        Log.i("JSON RESPONSE TEST", "HERE 0");
 //
 //        try {
 //            URL url = new URL(urlString);
@@ -169,10 +209,13 @@ public class WeatherMapActivity extends FragmentActivity {
 //            urlConnection.setRequestProperty("Accept-Encoding", "gzip");
 //            urlConnection.setRequestProperty("Expires", "0");
 //            urlConnection.setRequestProperty("Cache-Control", "no-cache");
+//            Log.i("JSON RESPONSE TEST", "HERE 1");
 //            urlConnection.connect();
 //
+//            Log.i("JSON RESPONSE TEST", "HERE 2");
+//
 //            responseCode = urlConnection.getResponseCode();
-//            if(responseCode == HttpURLConnection.HTTP_OK) {
+//            if (responseCode == HttpURLConnection.HTTP_OK) {
 //                InputStream inputStream = urlConnection.getInputStream();
 //                Reader reader = new InputStreamReader(inputStream);
 //                int contentLength = urlConnection.getContentLength();
@@ -180,14 +223,83 @@ public class WeatherMapActivity extends FragmentActivity {
 //                reader.read(charArray);
 //                String responseData = new String(charArray);
 //                Log.v("JSON RESPONSE!!!!", responseData);
-//            }else {
+//            } else {
 //                Log.i("RESPONSE ERROR", "RESPONSECODE = " + responseCode);
 //            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 //            return "GetInfo() Passed";
-        RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
-        CustomRequest jsObjRequest = new CustomRequest(Method.POST, url, params, this.createRequestSuccessListener(), this.createRequestErrorListener());
 
-        requestQueue.add(jsObjRequest);
+//        RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
+//        CustomRequest jsObjRequest = new CustomRequest(Method.POST, url, params, this.createRequestSuccessListener(), this.createRequestErrorListener());
+//
+//        requestQueue.add(jsObjRequest);
+
+        Log.i("JSON RESPONSE TEST", "HERE 0");
+        HttpClient httpclient = new DefaultHttpClient();
+        HttpGet httpget = new HttpGet("http://api.weather.com/v1/geocode/40.0/-74.0/observations/current.json?apiKey=34aae6773a01ce1756979f510dff96b9&language=en-US&units=m");
+        Log.i("JSON RESPONSE TEST", "HERE 00");
+        try {
+            Log.i("JSON RESPONSE TEST", "HERE 1");
+
+            HttpResponse response = httpclient.execute(httpget);
+            HttpEntity entity = response.getEntity();
+
+            Log.i("JSON RESPONSE TEST", "HERE 11");
+
+            if (entity != null) {
+                InputStream inputstream = entity.getContent();
+//                BufferedReader bufferedreader =
+//                        new BufferedReader(new InputStreamReader(inputstream));
+                Reader reader = new InputStreamReader(inputstream);
+                Log.i("JSON RESPONSE TEST", "HERE 2");
+                int contentLength = (int) entity.getContentLength();
+                Log.i("JSON RESPONSE TEST", "HERE 3");
+                char[] charArray = new char[contentLength];
+                reader.read(charArray);
+                String responseData = new String(charArray);
+                Log.v("JSON RESPONSE!!!!", responseData);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "Info not available";
+    }
+
+    class retrievedata extends AsyncTask<String,String,String> {
+
+        JSONObject jobj = null;
+
+        @Override
+        protected String doInBackground(String... arg0) {
+            // TODO Auto-generated method stub
+            jobj = jsonparser.makeHttpRequest("http://api.weather.com/v1/geocode/40.0/-74.0/observations/current.json?apiKey=34aae6773a01ce1756979f510dff96b9&language=en-US&units=e");
+
+            // check your log for json response
+            Log.d("Login attempt", jobj.toString());
+
+            try {
+                ab = jobj.getString("observation");
+            } catch (JSONException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            return ab;
+        }
+        protected void onPostExecute(String ab){
+
+            try {
+                JSONObject jsonObject = new JSONObject(ab);
+                //JSONArray jsonArray = new JSONArray(jsonObject);
+                Log.i("Returned JSONObject", jsonObject.toString());
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            //JSONArray jsonArray = new JSONArray(ab);
+
+        }
+
     }
 }
 /* with apache

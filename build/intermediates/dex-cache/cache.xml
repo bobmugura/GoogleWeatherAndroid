@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-b285ab6d653c6f5e624f03cbb48a1191f3573bf8.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-83cf21ae26546c4d95e420cd83d94e5299a913e2.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-5b9c242f8f5bd71a9ab07e2288c2ee118ebfee50.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-439532624928d18f3132e3815aaa639c4fcdee91.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-e67191ae915e759bbbd2d1ed2d86055b81262619.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-4a882c34d09f77f5974d4d63dac2fb077d72d35d.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.4.0/5b72bf48563ea8410e650de14aa33ff69a3e8c35/okio-1.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/okio-1.4.0-2085bf50d1a67eb8df4b02bda03d03e84103bd65.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-bd844ebdc2fbabbe7824f0fe1b5935992c343222.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-fc9d87219f49d816d41207c276ed26ba16b7c4a7.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-1cfbe47124c7c25548a406004b2fa7184fba9d75.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-56ce9919a9429d32fdf1e38983605aebcc020e38.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-dc406a049398d4a281869b311088968a98dfdd73.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-316e4551be605122dde2ef08aff31353586feba9.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/gson-2.3.1-7d7fb80b4f144261e82f81ad7ce1146b7c2be18e.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-c10eed451658a07a842a9491ee3587c027c79839.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-4148bc2641d53748d9e89e3936eb2c1a9576f5ad.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-eb0874f2e53cf126bfae7798d08cc8cf5c7d877d.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-07eecee32240da643045b3bac970c02bbbfe3e2f.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-0f809413cd7f89a8893b3b38a361e038b53f466f.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-669e765bb55afe82c7d5fc2b096cc191fd8cc48d.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/okhttp-2.4.0-226ea930244c28b7b289702df0c07e0b4d967650.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-5dbff5eddca88a070678d4e0dd20ca016b31f1c0.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-1ae67d5e327272591915b150734237e451882bdc.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-4c1642d33b9c45f53a3828894a9821ff0e8f6a00.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-6687c04fb0dcb93dc5b5bcaa1409cdd5194f9907.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-481a1b40d5f76b4407636519e6b01f2d187c2613.jar" />
+    </item>
+    <item
+        jar="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/Jasper/AndroidStudioProjects/StormTheRoad-Hackathon-master/android/app/build/intermediates/pre-dexed/debug/classes-d769dca2fc8eebeabbee1a44f428638d9cda4e52.jar" />
+    </item>
+
+</items>
